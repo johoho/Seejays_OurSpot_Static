@@ -18,9 +18,11 @@
 
 	<!-- CSS
   ================================================== -->
-	<link rel="stylesheet" href="css/base.css">
-	<link rel="stylesheet" href="css/skeleton.css">
-	<link rel="stylesheet" href="css/layout.css">
+<!-- 	<link rel="stylesheet" href="css/base.css"> -->
+	<link rel="stylesheet" href="css/normalize.css">
+<!-- 	<link rel="stylesheet" href="css/skeleton.css"> -->
+	<link rel="stylesheet" href="css/main.css">
+<!-- 	<link rel="stylesheet" href="css/layout.css"> -->
 
 	 <script src="js/libs/modernizr-2.5.3.min.js"></script>
 	<!--[if lt IE 9]>
@@ -38,24 +40,25 @@
 <body>
 	<header class="clearfix">
 		<img src="img/logo.gif" alt="OurSpot">
-		<nav>
-			<a href="#">campsites</a>
-			<a href="#">gear hire</a>
-			<a href="#"><img src="img/logo_icon.gif" alt="home"></a>
-			<a href="#">cart</a>
-			<a href="#">contact us</a>
+		<nav class="clearfix">
+			<ul class="clearfix">
+				<li><a href="#">campsites</a></li>
+				<li><a href="#">gear hire</a></li>
+				<li><a href="#"><img src="img/logo_icon.gif" alt="home"></a></li>
+				<li><a href="#">cart</a></li>
+				<li><a href="#">contact us</a></li>
+			</ul>
 		</nav>
 	</header>
 
 	<!-- Primary Page Layout
 	================================================== -->
-	<div class="wrapper clearfix">
 	<div id="homeImgs" class="centerAlign clearfix">
-		    <h3>book your spot with 3 easy steps.</h3>
-		</div>
+	    <h3>book your spot with 3 easy steps.</h3>
 	</div>
 
-	<div class="container centerAlign">
+
+	<div class="wrapper centerAlign clearfix">
 
 		<!--============================== CIRCLES ==============================-->
 
@@ -81,32 +84,32 @@
 
 			<h3 id="packages">packages made easy</h3>
 
-		<div class="four columns">
+		<div class="four_columns">
 			<a href="#"><figure>
 				<img src="img/icon_fishing.gif" alt="fishing package">
 				<figcaption>fishing package</figcaption> 
 			</figure></a>
 		</div>
-				<div class="four columns">
+				<div class="four_columns">
 			<a href="#"><figure>
 							<img src="img/icon_couples.gif" alt="couples package">
 							<figcaption>couples package</figcaption> 
 						</figure></a>
 		</div>
-				<div class="four columns">
+				<div class="four_columns">
 			<a href="#"><figure>
 							<img src="img/icon_cycling.gif" alt="biking package">
 							<figcaption>biking package</figcaption> 
 						</figure></a>
 		</div>
-				<div class="four columns">
+				<div class="four_columns">
 			<a href="#"><figure>
 							<img src="img/icon_hiking.gif" alt="hiking package">
 							<figcaption>hiking package</figcaption> 
 						</figure></a>
 		</div>
 
-	</div><!-- container -->
+	</div><!-- wrapper -->
 
 <footer class="centerAlign">
 	<a href="#"><img src="img/logo.gif" alt="home"></a>
@@ -132,6 +135,7 @@
 
     <script src="js/libs/jquery-1.7.1.min.js"></script>
     <script src="js/libs/jquery.backstretch.js"></script>
+    <script src="js/libs/waypoints.min.js"></script>
     <script src="js/myscripts.js"></script>
 
 </body>
